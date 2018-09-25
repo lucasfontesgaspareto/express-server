@@ -1,10 +1,10 @@
-import express from 'express'
+import { Router } from 'express'
 import { controllerHandler as ch } from './../utils/functions'
 import { getUser, postUser } from './../controllers/user'
 
-const router = express.Router()
+const router = new Router()
 
-router.get('/users/:username', ch(getUser, (req, res) => [req.params]))
-router.post('/users', ch(postUser), (req, res) => [req.body])
+router.get('/users/:username', ch(getUser, req => [req.params]))
+router.post('/users', ch(postUser, req => [req.body]))
 
 export default router
