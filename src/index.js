@@ -99,7 +99,7 @@ app.use(morgan('dev', {
 
 // log all requests to access.log
 app.use(morgan('common', {
-  stream: fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
+  stream: fs.createWriteStream(path.join(__dirname, '../log/http.log'), { flags: 'a' })
 }))
 
 // load routes registred in routes file
