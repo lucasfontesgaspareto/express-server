@@ -20,7 +20,8 @@
     "jshint-esnext": "^2.7.0-3",
     "mocha": "^5.2.0",
     "node-notifier": "^5.2.1",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0"
   },
   "dependencies": {
     "babel-preset-env": "^1.7.0",

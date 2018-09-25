@@ -72,6 +72,7 @@ if (process.env.NODE_ENV === 'production') {
 
 // 3rd party middlewares
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use(compression())
 
